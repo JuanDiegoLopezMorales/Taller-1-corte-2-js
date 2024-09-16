@@ -1,20 +1,5 @@
-const calcularFactorial = num => {
-    // Verificar si el número es positivo
-    if(num < 0) {
-        return "el numero debe ser positivo.";
-    }
-    // Verificar si el número es 0
-    else if (num === 0){
-        return 1;
-    }
-    // Calcular el factorial
-    else {  
-        let factorial = 1
-        for (let i = 1 ; i <= num; i++){
-            factorial *= i
-        }
-        return factorial;
-    }
+function saludor() {
+    console.log("Hola, mundo!");
 }
 
-console.log( calcularFactorial(5))
+saludar();
