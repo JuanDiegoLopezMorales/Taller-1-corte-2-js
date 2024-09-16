@@ -1,3 +1,3 @@
-let areaRectangulo = (base, altura) => base * altura;
+const areaRectangulo = (base, altura) => base * altura;
 
 console.log(areaRectangulo(10, 8));
