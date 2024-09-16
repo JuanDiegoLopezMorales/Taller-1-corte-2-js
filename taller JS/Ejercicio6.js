@@ -1,24 +1,12 @@
-const calcularMCD = (a, b) =>{
-    // Verificar si los números son enteros
-    if (!Number.isInteger(a) || !Number.isInteger(b)){
-        return "Ambos números deben ser enteros.";
+let nombre = prompt("Ingrese nombre"); 
+let idioma = prompt("Ingrese idioma");  
+
+const saludarPersona = (nombre, idioma = "es") => {
+    if (idioma === "es") {
+        return "Hola, " + nombre;
+    } else if (idioma === "en") {
+        return "Hello, " + nombre;
     }
-
-    // Asegurarse dd que los números sean positivos
-    a = Math.abs(a);
-    b = Math.abs(b);
-
-    // Utilizar el algo de Euclides para calcular el MCD
-    while (b /= 0  ){
-        const temp = b;
-        b = a % b;
-        a = temp;
-    }
-
-    // El MCD es el valor final de a
-    return a;
+    return "Idioma no soportado";
 }
-console.log(calcularMCD(24, 18));
-console.log(calcularMCD(10, 5));
-console.log(calcularMCD(7, 3));
-console.log(calcularMCD(3.5, 2));
+alert(saludarPersona(nombre, idioma))
