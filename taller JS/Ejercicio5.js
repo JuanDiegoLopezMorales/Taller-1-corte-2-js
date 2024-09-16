@@ -1,5 +1,3 @@
-const invertirCadena = str => str.split('').reverse().join('');
+const sumar = (num1, num2) => num1 + num2;
 
-console.log(invertirCadena("Hola"))
-console.log(invertirCadena("JavaScript"))
-console.log(invertirCadena("perro"))
+console.log(sumar(8, 5)) 
