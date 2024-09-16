@@ -1,26 +1,6 @@
-const generarFibonacci = (n) => {
-    // Verificar si n es un número válido
-    if (n <= 0 || !Number.isInteger(n)){
-        return "Por favor, ingrese un numero entero positivo.";
-    } 
-
-let resultado = "";
-let a = 0, b = 1;
-
-// Imprimir los dos primeros números de la serie
-resultado += `${a}, ${b}`;
-
-// Generar los números de la serie utilizando un ciclo
-for (let i = 2; i < n; i++){
-    const siguiente = a + b;
-    resultado += `, ${siguiente}`;
-    a=b;
-    b = siguiente;
+function esPar(num) {
+    return (num % 2 === 0) ? true : false 
 }
-
-// Devolver la cadena con la serie de Fibonacci
-return resultado;
-}
-console.log(generarFibonacci(8))
-console.log(generarFibonacci(0))
-console.log(generarFibonacci(-5))
+console.log(esPar(10))
+console.log(esPar(3))
+console.log(esPar(4))
