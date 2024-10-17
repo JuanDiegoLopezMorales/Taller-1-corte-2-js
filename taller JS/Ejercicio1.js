@@ -1,4 +1,4 @@
-function saludor() {
+function saludar() {
     console.log("Hola, mundo!");
 }
 
